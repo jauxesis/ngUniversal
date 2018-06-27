@@ -22,6 +22,8 @@ export class HomeComponent implements OnInit {
   		}
   	);
 
+    console.log("Server render");
+
   	this.test.getIP()
   	.then(
   		d=>{console.log("Result",d)},
