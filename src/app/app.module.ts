@@ -9,6 +9,8 @@ import { isPlatformBrowser } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { TemphomeComponent } from './temphome/temphome.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,8 @@ import { TemphomeComponent } from './temphome/temphome.component';
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'heroes' }),
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
