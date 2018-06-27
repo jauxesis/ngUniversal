@@ -39,6 +39,8 @@ app.get('/api/*', (req, res) => {
   res.status(404).send('data requests are not supported');
 });
 
+app.use('/test', require('./server/routes/test'));
+
 // Server static files from /browser
 app.get('*.*', express.static(join(DIST_FOLDER, 'browser')));
 
