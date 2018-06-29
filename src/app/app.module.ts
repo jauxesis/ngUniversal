@@ -6,11 +6,15 @@ import localeFrExtra from '@angular/common/locales/extra/fr';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
+import {APP_BASE_HREF} from '@angular/common';
 
 import { PLATFORM_ID, APP_ID, Inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { TemphomeComponent } from './temphome/temphome.component';
+import { MypageComponent } from './mypage/mypage.component';
+
+import { DisqusModule } from 'angular2-disqus';
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -22,14 +26,16 @@ registerLocaleData(localeFr, 'fr-FR', localeFrExtra);
   declarations: [
     AppComponent,
     HomeComponent,
-    TemphomeComponent
+    TemphomeComponent,
+    MypageComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'heroes' }),
     AppRoutingModule,
     HttpClientModule,
+    DisqusModule,
   ],
-  providers: [ { provide: LOCALE_ID, useValue: 'fr' } ],
+  providers: [ { provide: LOCALE_ID, useValue: 'fr' },{provide: APP_BASE_HREF, useValue: '/app'} ],
   bootstrap: [AppComponent],
   schemas:[
   	CUSTOM_ELEMENTS_SCHEMA

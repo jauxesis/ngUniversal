@@ -5,11 +5,11 @@ import { DOCUMENT } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 
 @Component({
-  selector: 'app-temphome',
-  templateUrl: './temphome.component.html',
-  styleUrls: ['./temphome.component.scss']
+  selector: 'app-mypage',
+  templateUrl: './mypage.component.html',
+  styleUrls: ['./mypage.component.scss']
 })
-export class TemphomeComponent implements OnInit {
+export class MypageComponent implements OnInit {
 
 	pageIdentifier:string = '';
 	pageUrl:string = '';

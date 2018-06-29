@@ -1,8 +1,11 @@
 <p  i18n="site header|An introduction header for this sample">
   home works!
 </p>
-<p style="word-break: break-all;">{{data?data:'Loading...'}}</p>
-<p>ASfsd</p>
+<button [routerLink]="['/pick']">ASfsd</button>
+<button routerLink="/my">my</button>
 <p>b2 c</p>
 <p>b1 c</p>
 <p>Hello</p>
+<p style="word-break: break-all;">{{data?data:'Loading...'}}</p>
+
+<disqus-thread [page-identifier]="pageIdentifier" [page-url]="pageUrl"></disqus-thread>
