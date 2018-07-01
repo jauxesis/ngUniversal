@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 import { TemphomeComponent } from './temphome/temphome.component';
+import { MypageComponent } from './mypage/mypage.component';
 
 const routes: Routes = [
     { 
@@ -17,6 +18,36 @@ const routes: Routes = [
         path: 'home',
         component: HomeComponent,
         data: { title: 'Login | Cashaa' }
+    },
+    {
+        path: 'my',
+        component: MypageComponent,
+        data: { title: 'Mypage | Cashaa' }
+    },
+    {
+        path: 'my/:id',
+        component: MypageComponent,
+        data: { title: 'Mypage | Cashaa' }
+    },
+    {
+        path: 'temp',
+        component: TemphomeComponent,
+        data: { title: 'Mypage | Cashaa' }
+    },
+    {
+        path: 'temp/:id',
+        component: TemphomeComponent,
+        data: { title: 'Mypage | Cashaa' }
+    },
+    {
+        path: 'page/temp',
+        component: TemphomeComponent,
+        data: { title: 'Mypage | Cashaa' }
+    },
+    {
+        path: 'page/temp/:id',
+        component: TemphomeComponent,
+        data: { title: 'Mypage | Cashaa' }
     },
     {
         path: '**',

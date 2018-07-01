@@ -27,8 +27,10 @@
     "@angular/router": "^6.0.3",
     "@nguniversal/express-engine": "^6.0.0",
     "@nguniversal/module-map-ngfactory-loader": "^6.0.0",
+    "angular2-disqus": "^6.1.1",
     "core-js": "^2.5.4",
     "rxjs": "^6.0.0",
+    "rxjs-compat": "^6.2.1",
     "ts-loader": "^4.4.1",
     "zone.js": "^0.8.26"
   },
